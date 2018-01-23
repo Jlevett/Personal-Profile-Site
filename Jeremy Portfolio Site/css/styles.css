@@ -1,0 +1,165 @@
+/*Top Area*/
+.name {
+  text-transform: uppercase;
+  font: bold 40px "Julius Sans One",sans-serif;
+  margin: 0;
+  color: #7fbf3f;
+}
+
+.title {
+  font: bold 25px "Julius Sans One",sans-serif;
+  margin: 0;
+  color: #7fbf3f;
+}
+
+/*Mid Area*/
+.line {
+  margin-top: 10px;
+  border-top: 3px solid #7d97ad;
+}
+
+.mid-image {
+  width: 100%;
+}
+
+.sub-heading {
+  font: bold 30px "Julius Sans One",sans-serif;
+  color: #7d97ad;
+}
+
+ .intro {
+  font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+  color: #7d97cd;
+ }
+
+/*Project Area (Bottom Area)*/
+.projects-area {
+  width : 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;s
+}
+
+.project-img {
+  width: 300px;
+  text-align: center;
+  box-shadow: 10px 10px 5px #333;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.project-name {
+  font: bold 20px "Julius Sans One",sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0.5em;
+  color: #2d3c49;
+}
+
+.project-link {
+  font: bold 10px "Julius Sans One", sans-serif;
+  text-align: center;
+  margin: 0.5em;
+  color: #2d3c49;
+}
+
+/*Media Queries: For compatibility with Nexus 5 mobile*/
+@media screen and (max-width: 550px) {
+ /*Top Area*/
+ .top-container{
+   width:100%;
+ }
+
+ .logo{
+   display: block;
+   margin: auto;
+ }
+
+ .name-container {
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+ }
+
+ .title-container {
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+ }
+
+ /*Mid Area*/
+ .intro {
+  font-size: 1em;
+ }
+
+ .sub-heading {
+   text-align: center;
+ }
+}
+
+/*Media Queries: For Compatibility with Desktop & Ipad)*/
+@media screen and (min-width: 550px){
+ /*Top Area*/
+ .top-container {
+   width: 100%;
+   max-width: 1400px;
+   max-height: 120px;
+   margin-left: auto;
+   margin-right: auto;
+   display: grid;
+   grid-template-columns: 130px auto 360px;
+   grid-template-rows: 90px 30px;
+ }
+
+ .logo-container {
+   grid-column-start:1;
+   grid-column-end: 2;
+   grid-row-start:1;
+   grid-row-end: 3;
+ }
+
+ .name-container {
+   grid-column-start:3;
+   grid-column-end: 4;
+   grid-row-start:1;
+   grid-row-end: 2;
+   text-align: right;
+   margin-top: 40px;
+ }
+
+ .title-container {
+   grid-column-start:3;
+   grid-column-end: 4;
+   grid-row-start: 2;
+   grid-row-end: 3;
+   text-align: right;
+ }
+
+ /*Mid Area*/
+ .mid-area {
+   max-width: 1400px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .intro {
+   font-size: 1.5em;
+ }
+
+ /*Project Area (Bottom Area)*/
+ .projects-area {
+   max-width: 1400px;
+ }
+}
